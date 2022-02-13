@@ -1,36 +1,37 @@
 {
-  "name": "cryptozombies",
+  "name": "registracion",
   "version": "1.0.0",
-  "description": "Loom Network tutorial code (https://cryptozombies.io)",
-  "directories": {
-    "test": "test"
-  },
-  "dependencies": {
-    "bn.js": "^4.11.6",
-    "dotenv": "^4.0.0",
-    "ethjs-abi": "^0.2.1",
-    "is-hex-prefixed": "^1.0.0",
-    "js-sha3": "^0.5.5",
-    "number-to-bn": "^1.7.0",
-    "strip-hex-prefix": "^1.0.0",
-    "zeppelin-solidity": "^1.7.0",
-    "install": "^0.10.4"
-  },
-  "devDependencies": {
-    "lite-server": "^2.3.0"
-  },
+  "description": "",
+  "main": "index.js",
   "scripts": {
-    "dev": "lite-server",
+    "dev": "nodemon server.js",
+    "start": "node server.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/nigeon/CryptoZombies.git"
+  "nodemonConfig": {
+    "ignore": [
+      "sessions/*"
+    ]
   },
+  "keywords": [],
   "author": "",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/nigeon/CryptoZombies/issues"
+  "devDependencies": {
+    "nodemon": "^2.0.15",
+    "sequelize-cli": "^6.3.0"
   },
-  "homepage": "https://github.com/nigeon/CryptoZombies#readme"
+  "dependencies": {
+    "@binance/connector": "^1.5.0",
+    "bcrypt": "^5.0.1",
+    "dotenv": "^10.0.0",
+    "express": "^4.17.1",
+    "express-session": "^1.17.2",
+    "hbs": "^4.2.0",
+    "morgan": "^1.10.0",
+    "pg": "^8.7.1",
+    "pg-hstore": "^2.3.4",
+    "sequelize": "^6.12.0-alpha.1",
+    "session-file-store": "^1.5.0",
+    "ws": "^8.3.0"
+  }
 }
